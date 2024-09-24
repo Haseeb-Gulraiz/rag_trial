@@ -9,3 +9,10 @@ To run:
 build a virtual environment and install requirements.txt
 make .env where openai key is to be added. OPENAI_API_KEY= ''
 first run rest_api.py and then frontend.py
+
+request-curl :
+curl --location 'http://127.0.0.1:5000/ask' \
+--header 'Content-Type: application/json' \
+--data '{
+    "query": "what is the yield of brocolli?"
+}'
